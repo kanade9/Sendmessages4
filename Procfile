@@ -1,1 +1,1 @@
-web: guicorn app:app --log-file=- 
+web: guicorn app:app --log-file=-
