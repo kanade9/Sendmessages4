@@ -1,11 +1,11 @@
-# coding: utf-8
+# -*- coding: utf-8 -*-
 from flask import *
 import PyLineNotify
 app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    st = "あなたのトークンと送りたいメッセージを入力してください。"
+    st = u"あなたのトークンと送りたいメッセージを入力してください。"
     return render_template("form.html",st=st)
 
 @app.route('/result', methods = ['POST'])
