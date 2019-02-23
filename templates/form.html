@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block form %}
+<style>
+.gre {
+    color:#33CC00;
+
+}
+</style>
+
+<h1>Send Messages To
+    <span class="gre">LINE</span></h1>
+
+<form action="/result" method="post">
+    <label for="token">Token&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" name="token">
+    <p></p>
+    <label for="message">Message</label>
+    <input type="text" name="message">
+    <p></p>
+    <button type="submit">submit</button>
+</form>
+<p>{{ st }}</p>
+{% endblock %}
